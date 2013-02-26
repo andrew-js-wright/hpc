@@ -1,0 +1,11 @@
+#PBS -q debug_eth 
+#PBS -N searching_sequential
+#PBS -l walltime=00:00:05
+#PBS -o searching_sequential.out
+#PBS -j oe
+
+cd Assignment1-dir
+./compile searching_sequential
+date
+./searching_sequential
+date
